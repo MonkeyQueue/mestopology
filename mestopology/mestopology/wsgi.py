@@ -13,5 +13,5 @@ from django.core.wsgi import get_wsgi_application
 
 #os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mestopology.settings")
 profile = os.environ.get('MESTOPOLOGY_PROFILE','develop')
-os.environ.setdefault('DJANGO_SETTINGS_MODULE','mestopology.settings.%s'%profile)
+os.environ.setdefault('DJANGO_SETTINGS_MODULE',"mestopology.settings.%s"%profile)
 application = get_wsgi_application()

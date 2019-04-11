@@ -25,18 +25,22 @@ SECRET_KEY = '12_e3d-)#$tc91hjxy464__#=w&zp*3ap$$p5ir-u3oa4$rf_v'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [*]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'mesinfor',
+    'machineinfor',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+  
 ]
 
 MIDDLEWARE = [
@@ -76,7 +80,7 @@ WSGI_APPLICATION = 'mestopology.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'webdb',
+        'NAME': 'mesdb',
         'USER': 'root',
         'PASSWORD': '123456',
         'HOST': 'localhost',
